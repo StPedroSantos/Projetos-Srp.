@@ -44,7 +44,7 @@ int main() {
 
 // Após os valores das variáveis serem adiconados agora será feito a impressão dos mesmos .
 
-    printf("\n*** Dados da cidade ***\n");
+    printf("\n*** Carta 1 ***\n");
 
     printf("Estado: %s\n", estado); // Imprimindo o nome do estado
     printf("Código da cidade: %s\n", codigodacidade); // Imprimindo o código da cidade
