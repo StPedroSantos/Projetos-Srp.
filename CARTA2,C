@@ -4,13 +4,15 @@ int main() {
 
 
 //Carta 2
-    char estado[50];  //Estado " Mato grosso".
+    char estado[100];  //Estado " Matogrosso".
     char codigodacidade[50]; // Nomeclatura do codigo da carta "R1".
     char nomeCidade[50]; // Cidade de "Rondonópolis".
     int populacao; // População de Rondonopolis "244911".
     float area;  // Tamanho da Área "4165km²".
-    float pib=; // Valor do Pib "17.000.000.000".
+    float pib; // Valor do Pib "17.000.000.000".
     int turismo;  //Quantidades de pontos turistico "6".
+    float densidadepopulacional;
+    float pibpercapita;
 
 printf("*** Digite os dados da cidade ***\n");
 
@@ -37,7 +39,7 @@ printf("*** Digite os dados da cidade ***\n");
 
 // Após os valores das variáveis serem adiconados agora será feito a impressão dos mesmos .
 
-    printf("\n*** Dados da cidade ***\n");
+    printf("\n*** CARTA 2 ***\n");
 
     printf("Estado: %s\n", estado); // Imprimindo o nome do estado
     printf("Código da cidade: %s\n", codigodacidade); // Imprimindo o código da cidade
@@ -46,7 +48,11 @@ printf("*** Digite os dados da cidade ***\n");
     printf("Área: %.2f\n", area); // Imprimindo a área com 2 casas decimais
     printf("PIB: %.2f\n", pib); // Imprimindo o PIB com 2 casas decimais
     printf("Pontos turísticos: %d\n", turismo); // Imprimindo os pontos turísticos
+    densidadepopulacional= (populacao/area);
+    pibpercapita= (pib/populacao);
 
+   printf("Densidade Populacional:%.2f \n",densidadepopulacional);
+   printf("PIb per Capita: %.2f \n", pibpercapita);
 
   
     return 0;
