@@ -107,16 +107,45 @@ int main() {
   Superpoder2= (float)+ area2+ pib2+ pibpercapita2+densidadepopulacional2 + turismo2+ populacao2;
   printf("Super poder : %.2f \n", Superpoder2);
   
-  printf("\n***Carta 1 VS Carta2 ***\n");
- float resultado;
- int desensidade;
-resultado= carta1>  carta2;
-desensidade= densidadepopulacional1 < densidadepopulacional2; 
+  printf("*** Carta 1 vs Carta 2 ***\n");
 
-printf("Se valor 1 vitoria da carta 1 se valor 0 vitoria da carta2 %s= %f\n",resultado );
+ printf("Carta 1- %s - População:%d \n ", nomeCidade1,populacao1);
+ printf("Carta 2 - %s - População:%d \n ", nomeCidade2,populacao2);
+ printf("Carta 1 - %s- Pib:%f \n",nomeCidade1, pib1);
+ printf("Carta 2 - %s - Pib:%f \n", nomeCidade2,pib2);
+ printf("Carta 1 - %s - Pontos Turiscos:%d \n", nomeCidade1, turismo1);
+ printf("Carta 2 - %s - Pontos Turisticos:%d \n", nomeCidade2, turismo2);
+printf("Carta 1 - %s - Área:%f \n",nomeCidade1,area1);
+printf("Carta 2 - %s - Área:%f \n",nomeCidade2,area2);
+printf("Carta 1 - %s - Pib Percapita:%f \n", nomeCidade1,pibpercapita1);
+printf("Carta 2 - %s - Pib Percapita:%f \n", nomeCidade2,pibpercapita2);
+printf("Carta 1 - %s - Super poder:%f \n", nomeCidade1,Superpoder1);
+printf("Carta 2 - %s - Super poder:%f \n", nomeCidade2, Superpoder2);
+printf("Carta 1 - %s - Densidade populacional:%f\n", nomeCidade1,densidadepopulacional1);
+printf("Carta 2 - %s - Densidade populacional:%f\n",nomeCidade2,densidadepopulacional2);
 
-printf("Se valor 1 vitoria da carta 1 se valor 0 vitoria da carta2 %s= %d\n",desensidade );
 
+  if (populacao1>populacao2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
 
+  if (pib1>pib2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+
+  if (turismo1>turismo2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+  
+  if (area1>area2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+  
+  if (pibpercapita1>pibpercapita2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+  
+  if (Superpoder1>Superpoder2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+  
+  if (densidadepopulacional1<densidadepopulacional2)  {printf("Carta 1 venceu!\n");}
+  else {printf("Carta 2 venceu!\n");}
+   
     return 0;
 }
+
