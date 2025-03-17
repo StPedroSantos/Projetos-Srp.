@@ -4,7 +4,7 @@
 // Definindo as variáveis .
 int main() {
     char carta1[50],carta2[50];
-    char estado1[50], estado2[50];  
+    char Pais1[50], Pais2[50];  
     char codigodacidade1[50], codigodacidade2[50]; 
     char nomeCidade1[50] , nomeCidade2[50];  
     int populacao1 , populacao2;
@@ -20,8 +20,8 @@ int main() {
     printf("Carta: ");
     scanf("%s", carta1);
 
-    printf("Estado: ");
-    scanf("%s", estado1); 
+    printf(País: ");
+    scanf("%s", Pais1); 
 
     printf("Código da cidade: ");
     scanf("%s", codigodacidade1);  
@@ -43,7 +43,7 @@ int main() {
 
 
     printf("Carta: %s\n", carta1);
-    printf("Estado: %s\n", estado1); 
+    printf("País: %s\n", Pais1); 
     printf("Código da cidade: %s\n", codigodacidade1); 
     printf("Nome da cidade: %s\n", nomeCidade1);
     printf("População: %d\n", populacao1); 
@@ -66,8 +66,8 @@ int main() {
    printf("Carta : ");
    scanf("%s", carta2);  
 
-   printf("Estado: ");
-   scanf("%s", estado2);   
+   printf("País: ");
+   scanf("%s", Pais2);   
 
    printf("Código da cidade: ");
    scanf("%s", codigodacidade2);  
@@ -91,7 +91,7 @@ int main() {
    printf("Carta : %s\n", carta2);
    
 
-   printf("Estado: %s\n", estado2); // Imprimindo o nome do estado
+   printf("País: %s\n", pais2); // Imprimindo o nome do estado
    printf("Código da cidade: %s\n", codigodacidade2); // Imprimindo o código da cidade
    printf("Nome da cidade: %s\n", nomeCidade2); // Imprimindo o nome da cidade
    printf("População: %d\n", populacao2); // Imprimindo a população
@@ -109,20 +109,20 @@ int main() {
   
   printf("*** Carta 1 vs Carta 2 ***\n");
 
- printf("Carta 1- %s - População:%d \n ", nomeCidade1,populacao1);
- printf("Carta 2 - %s - População:%d \n ", nomeCidade2,populacao2);
- printf("Carta 1 - %s- Pib:%f \n",nomeCidade1, pib1);
- printf("Carta 2 - %s - Pib:%f \n", nomeCidade2,pib2);
- printf("Carta 1 - %s - Pontos Turiscos:%d \n", nomeCidade1, turismo1);
- printf("Carta 2 - %s - Pontos Turisticos:%d \n", nomeCidade2, turismo2);
-printf("Carta 1 - %s - Área:%f \n",nomeCidade1,area1);
-printf("Carta 2 - %s - Área:%f \n",nomeCidade2,area2);
-printf("Carta 1 - %s - Pib Percapita:%f \n", nomeCidade1,pibpercapita1);
-printf("Carta 2 - %s - Pib Percapita:%f \n", nomeCidade2,pibpercapita2);
-printf("Carta 1 - %s - Super poder:%f \n", nomeCidade1,Superpoder1);
-printf("Carta 2 - %s - Super poder:%f \n", nomeCidade2, Superpoder2);
-printf("Carta 1 - %s - Densidade populacional:%f\n", nomeCidade1,densidadepopulacional1);
-printf("Carta 2 - %s - Densidade populacional:%f\n",nomeCidade2,densidadepopulacional2);
+ printf("Carta 1- %s - População:%d \n ", Pais1,populacao1);
+ printf("Carta 2 - %s - População:%d \n ", Pais2,populacao2);
+ printf("Carta 1 - %s- Pib:%f \n",Pais1, pib1);
+ printf("Carta 2 - %s - Pib:%f \n", Pais2,pib2);
+ printf("Carta 1 - %s - Pontos Turiscos:%d \n", Pais1, turismo1);
+ printf("Carta 2 - %s - Pontos Turisticos:%d \n", Pais2, turismo2);
+printf("Carta 1 - %s - Área:%f \n",Pais1,area1);
+printf("Carta 2 - %s - Área:%f \n",Pais2,area2);
+printf("Carta 1 - %s - Pib Percapita:%f \n", Pais1,pibpercapita1);
+printf("Carta 2 - %s - Pib Percapita:%f \n", Pais2,pibpercapita2);
+printf("Carta 1 - %s - Super poder:%f \n", Pais1,Superpoder1);
+printf("Carta 2 - %s - Super poder:%f \n", Pais2, Superpoder2);
+printf("Carta 1 - %s - Densidade populacional:%f\n", Pais1,densidadepopulacional1);
+printf("Carta 2 - %s - Densidade populacional:%f\n",Pais2,densidadepopulacional2);
 
 
   if (populacao1>populacao2)  {printf("Carta 1 venceu!\n");}
