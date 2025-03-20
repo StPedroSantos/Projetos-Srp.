@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 // Cadrasto das cartas 1 e 2.
 // Definindo as variáveis .
 int main() {
@@ -106,17 +107,103 @@ int main() {
 
   Superpoder2= (float)+ area2+ pib2+ pibpercapita2+densidadepopulacional2 + turismo2+ populacao2;
   printf("Super poder : %.2f \n", Superpoder2);
+
+//Definindo atributos  .
+
+ int opcao1 = populacao1,pib1,turismo1,area1,densidadepopulacional1;
+ int opcao2 = populacao2, pib2, turismo2, area2, densidadepopulacional2;
+
+ printf("***Duelo***\n");
+
+printf("***Menul inicial***\n");
+
+ printf("Escolha o atributo \n"); 
+ printf("1.População\n");
+ printf("2. Pib\n");
+ printf("3.Numeros de pontos turistico\n");
+ printf("4.Área\n");
+ printf("5.Densidade Populacional\n");
+ printf("6.Desistir do duelo\n");
+ printf("Escolha o atributo \n");
+scanf("%d", &opcao1);
+
+opcao2= rand() % 6 +1;
+
+  switch (opcao1)
+  {        
+  case 1 :
+    printf("Atributo : População");
+    break;
+    case 2 :
+    printf("Atributo : Pib");
+    break;
+    case 3 :
+    printf("Atributo : Numero de pontos turisticos");
+    break;
+    case 4 :
+    printf("Atributo : Área");
+    break;
+    case 5 :
+    printf("Atributo : Densidade populacional");
+    break;
+    case 6 :
+    printf("Desistir do duelo");
+    break;
+  default: printf("Opção invalida! Volte ao menu inicial");
+    break;
+  }
+  switch (opcao2)
+  {        
+  case 1 :
+    printf("Atributo : População");
+    break;
+    case 2 :
+    printf("Atributo : Pib");
+    break;
+    case 3 :
+    printf("Atributo : Numero de pontos turisticos");
+    break;
+    case 4 :
+    printf("Atributo : Área");
+    break;
+    case 5 :
+    printf("Atributo : Densidade populacional");
+    break;
+    case 6 :
+    printf("Desistir do duelo");
+    break;
+  default: printf("Opção invalida! Volte ao menu inicial");
+    break;
+  }
+if (opcao1=opcao2)
+{printf("Empate \n");}
+
+else if((opcao1=1 ) && (opcao1>opcao2))
+{  printf("Carta 1 venceu/n");}
+
+else printf("Carta 2 venceu");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  printf("\n***Carta 1 VS Carta2 ***\n");
- float resultado;
- int desensidade;
-resultado= carta1>  carta2;
-desensidade= densidadepopulacional1 < densidadepopulacional2; 
 
-printf("Se valor 1 vitoria da carta 1 se valor 0 vitoria da carta2 %s= %f\n",resultado );
-
-printf("Se valor 1 vitoria da carta 1 se valor 0 vitoria da carta2 %s= %d\n",desensidade );
-
-
+  
     return 0;
 }
+

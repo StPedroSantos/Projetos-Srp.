@@ -1,7 +1,5 @@
 {
     "files.associations": {
-        "CARTA1.C": "cpp",
-        "CARTA2.C": "cpp",
         "teste.C": "cpp",
         "Cadrasto das cartas.C": "cpp"
     }
